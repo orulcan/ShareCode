@@ -41,7 +41,7 @@ namespace AppTest
         {
             //
             string pass = "";
-            MongoClient dbClient0 = new MongoClient("mongodb+srv://orulcan:197523789o@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            MongoClient dbClient0 = new MongoClient("mongodb+srv://*****:*****@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             IMongoDatabase db0 = dbClient0.GetDatabase("ShareCode");
             var users = db0.GetCollection<BsonDocument>("Users");
             var filter = Builders<BsonDocument>.Filter.Eq("Username", guna2TextBox2.Text);
