@@ -28,7 +28,7 @@ namespace AppTest
         private void guna2GradientTileButton1_Click(object sender, EventArgs e)
         {
             string name = "", title = "", date = "", code = "";
-            MongoClient dbClient0 = new MongoClient("mongodb+srv://orulcan:197523789o@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            MongoClient dbClient0 = new MongoClient("mongodb+srv://*****:******@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             IMongoDatabase db0 = dbClient0.GetDatabase("ShareCode");
             var mySavedCodes = db0.GetCollection<BsonDocument>("MySavedCodes");
             var filter = Builders<BsonDocument>.Filter.Eq("Name", gunaLabel1.Text);
