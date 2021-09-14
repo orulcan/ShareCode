@@ -66,7 +66,7 @@ namespace AppTest
             bool check;
             guna2ProgressIndicator1.Visible = true;
             guna2ProgressIndicator1.AutoStart = true;
-            MongoClient dbClient0 = new MongoClient("mongodb+srv://orulcan:197523789o@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            MongoClient dbClient0 = new MongoClient("mongodb+srv://******:*******@cluster0.aksdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             IMongoDatabase db0 = dbClient0.GetDatabase("ShareCode");
             if (guna2RadioButton1.Checked == true)
             {
